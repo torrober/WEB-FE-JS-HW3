@@ -62,3 +62,6 @@ button {
     background-color: white; 
     transition: .5s all;
 }
+main {
+    padding: 20px;
+}
