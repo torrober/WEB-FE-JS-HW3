@@ -7,10 +7,58 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    width: calc(100vw - 40px);
+    position: fixed;
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+p, span, b, i, del, underline, button, input, a, li {
+    font-family: 'Inter', sans-serif;
+}
+code {
+    font-family: 'Space Mono',monospace;
+}
+button {
+    cursor: pointer;
 }
 .menu {
     list-style: none;
     display:flex;
     align-items:center;
     gap:20px;
+    padding: 0;
+}
+.hero {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/bg-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-content {
+    display: grid;
+    color: white;
+}
+.button-hero {
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: .5s all;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.button-hero:hover {
+    color: black;
+    background-color: white; 
+    transition: .5s all;
 }
