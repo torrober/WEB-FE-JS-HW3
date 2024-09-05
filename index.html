@@ -20,6 +20,20 @@
             <li class="menu-item">Async/Await</li>
             <li class="menu-item">Event Loop</li>
         </ul>
+        <details>
+            <summary>
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </summary>
+            <ul class="hamburger-menu">
+                <li>JavaScript Async</li>
+                <li>Callback</li>
+                <li>Promise</li>
+                <li>Async/Await</li>
+                <li>Event Loop</li>
+            </ul>
+        </details>
     </header>
     <div class="content">
         <section class="hero">
@@ -47,14 +61,14 @@
                     <div class="concept-code">
                         <pre>
                             <code>
-                            // Example: Asynchronous operation using setTimeout
-                            console.log('Start');
-                            
-                            setTimeout(() => {
-                                console.log('Async operation');
-                            }, 2000);
-                            
-                            console.log('End');
+// Example: Asynchronous operation using setTimeout
+console.log('Start');
+
+setTimeout(() => {
+    console.log('Async operation');
+}, 2000);
+
+console.log('End');
                             </code>
                         </pre>
                     </div>
@@ -73,15 +87,15 @@
                     <div class="concept-code">
                         <pre>
                             <code>
-                            // Example: Callback function
-                            function doTask(callback) {
-                                console.log('Task started');
-                                callback(); // Invoke the callback
-                            }
-                            
-                            doTask(() => {
-                                console.log('Task completed');
-                            });
+// Example: Callback function
+function doTask(callback) {
+    console.log('Task started');
+    callback(); // Invoke the callback
+}
+
+doTask(() => {
+    console.log('Task completed');
+});
                             </code>
                         </pre>
                     </div>
@@ -100,19 +114,19 @@
                     <div class="concept-code">
                         <pre>
                             <code>
-                            // Example: Promise
-                            let myPromise = new Promise((resolve, reject) => {
-                                let success = true;
-                                if (success) {
-                                    resolve('Operation successful');
-                                } else {
-                                    reject('Operation failed');
-                                }
-                            });
-                            
-                            myPromise
-                                .then(result => console.log(result))
-                                .catch(error => console.error(error));
+// Example: Promise
+let myPromise = new Promise((resolve, reject) => {
+    let success = true;
+    if (success) {
+        resolve('Operation successful');
+    } else {
+        reject('Operation failed');
+    }
+});
+
+myPromise
+    .then(result => console.log(result))
+    .catch(error => console.error(error));
                             </code>
                         </pre>
                     </div>
@@ -131,17 +145,17 @@
                     <div class="concept-code">
                         <pre>
                             <code>
-                            // Example: Async/Await
-                            async function fetchData() {
-                                try {
-                                    let result = await myPromise;
-                                    console.log(result);
-                                } catch (error) {
-                                    console.error(error);
-                                }
-                            }
-                            
-                            fetchData();
+// Example: Async/Await
+async function fetchData() {
+    try {
+        let result = await myPromise;
+        console.log(result);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+fetchData();
                             </code>
                         </pre>
                     </div>
@@ -160,10 +174,10 @@
                     <div class="concept-code">
                         <pre>
                             <code>
-                            // Example: Event Loop
-                            console.log('First');
-                            setTimeout(() => console.log('Third'), 0);
-                            console.log('Second');
+// Example: Event Loop
+console.log('First');
+setTimeout(() => console.log('Third'), 0);
+console.log('Second');
                             </code>
                         </pre>
                     </div>
