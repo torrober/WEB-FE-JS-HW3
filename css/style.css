@@ -86,7 +86,11 @@ button {
   align-items: center;
   gap: 10px;
 }
-.button-hero:hover {
+.button-hero>a{
+    color: black;
+    text-decoration: none;
+}
+.button-hero:hover .button-hero>a:hover {
   color: white;
   background-color: black;
   transition: 0.5s all;
