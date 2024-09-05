@@ -15,4 +15,4 @@ Explanation for:
     - style.css
 - img
     - bg-hero.jpg
-index.html
+- index.html
