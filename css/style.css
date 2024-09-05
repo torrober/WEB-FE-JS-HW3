@@ -65,3 +65,8 @@ button {
 main {
     padding: 20px;
 }
+.concept-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 2fr 1fr;
+}
