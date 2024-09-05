@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -32,7 +35,7 @@ underline,
 button,
 input,
 a,
-li {
+li, footer {
   font-family: "Inter", sans-serif;
 }
 pre {
@@ -103,8 +106,18 @@ details > summary::-webkit-details-marker {
   display: none;
   user-select: none;
 }
-.hamburger-menu, details {
+.hamburger-menu,details {
   display: none;
+}
+.menu > li > a,
+.hamburger-menu > li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.hamburger-menu {
+    list-style:none;
+    padding:0;
 }
 @media (max-width: 768px) {
   .concept-container {
@@ -118,9 +131,22 @@ details > summary::-webkit-details-marker {
   .menu {
     display: none;
   }
-  .hamburger-menu, details {
+  .hamburger-menu,
+  details {
     display: block;
     cursor: pointer;
     user-select: none;
   }
+  .button-hero {
+    padding: 14px;
+    font-size: 14px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+footer {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
 }
